@@ -1,0 +1,6 @@
+#game-container {
+  position: relative;
+  background-image: url("imgs/underwater.jpg");
+  background-size: cover;
+  width: 500px;
+}
