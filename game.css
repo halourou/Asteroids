@@ -137,3 +137,27 @@ progress[value]::-webkit-progress-bar {
   border-radius: 2px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
  }
+
+.loser {
+  z-index: 1;
+  background: white;
+  padding: 30px;
+  position: absolute;
+  font-size: 36px;
+  text-align: center;
+  width: 200px;
+  color: red;
+  font-weight: bold;
+  padding: 5px;
+  margin: 28%;
+  margin-top: 60px;
+  border: 3px solid red;
+  border-radius: 10px;
+  box-shadow: 0 0 12px 2px red;
+}
+
+.story {
+  font-size: 15px;
+  text-align: left;
+  color: black;
+}
