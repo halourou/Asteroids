@@ -16,6 +16,10 @@
       <div class="start">
         <button class="start">Play</button>
       </div>
+      <div class="intro">
+        Do you ever get the feeling that things <br>aren't as rosy as they appear under the surface? <br><br> The Blue Meanies are coming to attack the Yellow Submarine! <br> So, let's get this vessel shipshape. Or submarine shape. <br>And defend our seas. All you need is love.
+        <br><br> UP/DOWN/LEFT/RIGHT arrow keys to move. SPACE to shoot.
+      </div>
     </div>
 
     <progress class="hidden" value="100" max="100"></progress>
@@ -23,7 +27,7 @@
 
     <div class="game-over loser hidden">
       <div class="lost">You Lost!
-        <div class="story">The Blue Meanies have taken over the sea of green and the yellow submarine.</div>
+        <div class="story nay"></div>
       </div>
 
       <div class="start">
@@ -32,7 +36,9 @@
     </div>
 
     <div class="game-over winner hidden">
-      <div class="won">You Won!</div>
+      <div class="won">You destroyed the Meanies!
+        <div class="story yay">But it looks like more are on the way...</div>
+      </div>
 
       <div class="start">
         <button class="start">Next Level</button>
@@ -40,7 +46,9 @@
     </div>
 
     <div class="end hidden">
-      <div class="won">The End!</div>
+      <div class="won">The End!
+        <div class="story">Not a Meanie in sight. Not a teeny Meanie. Not even a teeny weeny Meanie.</div>
+      </div>
       <div class="start">
           <button class="play-again">Start Over</button>
       </div>
