@@ -26,24 +26,32 @@
       var canvasEl = document.getElementById("game-canvas");
       canvasEl.height = window.Asteroids.Game.DIM_Y;
       canvasEl.width = window.Asteroids.Game.DIM_X;
+
       sub = new Image();
-      sub.src = "imgs/submarine.png";
+      sub.src = "imgs/subflash.png";
       subleft = new Image();
-      subleft.src = "imgs/subleft.png";
+      subleft.src = "imgs/subflashrev.png";
+
       meanie = new Image();
       meanie.src = "imgs/meanie.png";
       meanieleft = new Image();
       meanieleft.src = "imgs/meanieleft.png";
+
       poof = new Image();
       poof.src = "imgs/poof.png";
+
       flower = new Image();
       flower.src = "imgs/flower.png"
+
       explosion = new Image();
       explosion.src = "imgs/flowerburst.png"
-      flash = new Image();
-      flash.src = "imgs/subflash.png"
+
+      // flash = new Image();
+      // flash.src = "imgs/subflash.png"
+
       gameView = new window.Asteroids.GameView(canvasEl);
       gameView.start();
+
     </script>
 
   </body>
