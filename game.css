@@ -27,9 +27,9 @@
   border: 2px solid rgba(29,87,47,1);
   border-radius: 25px;
   z-index: 1;
-  -webkit-box-shadow: 0px 0px 200px 32px rgba(29,87,47,1);
-  -moz-box-shadow: 0px 0px 200px 32px rgba(29,87,47,1);
-  box-shadow: 0px 0px 200px 32px rgba(29,87,47,1);
+  -webkit-box-shadow: 0px 0px 25px 1px rgba(29,87,47,1);
+  -moz-box-shadow: 0px 0px 25px 1px rgba(29,87,47,1);
+  box-shadow: 0px 0px 25px 1px rgba(29,87,47,1);
   animation-duration: 2s;
   animation-name: bounceIn;
 }
@@ -63,10 +63,13 @@
   border: none;
   letter-spacing: 1px;
   font-size: 24px;
+  -webkit-box-shadow: 0px 0px 250px 30px rgba(29,87,47,1);
+  -moz-box-shadow: 0px 0px 250px 30px rgba(29,87,47,1);
+  box-shadow: 0px 0px 250px 30px rgba(29,87,47,1);
 }
 
 .start > button:hover {
-  background: #305E69;
+  background: #61d3ca;
   /*border: 1px solid #47a099;*/
 }
 
@@ -116,3 +119,21 @@
 .hidden {
   display: none;
 }
+
+progress {
+  position: absolute;
+  margin-left: 315px;
+  margin-top: 15px;
+  -webkit-appearance: none;
+   appearance: none;
+  height: 20px;
+  z-index: 1;
+  border: 1px solid #47a099;
+  border-radius: 2px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+ }
