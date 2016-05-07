@@ -8,7 +8,7 @@
   <body>
 
   <div id="game-container">
-    <div class="menu hidden">
+    <div class="menu">
       <div class="title">
         <img class="seaweed" src="imgs/seaweed.png" alt="Sea of Green"/>
         <img class="sub" src="imgs/subflashrev.png" alt="sub" />
@@ -23,7 +23,7 @@
     <canvas id="game-canvas"></canvas>
   </div>
 
-
+    <script src="vendors/jquery-1.11.3.min.js"></script>
     <script src="./lib/keymaster-master/keymaster.js"></script>
     <script src="./lib/utils.js"></script>
     <script src="./lib/movingObject.js"></script>
@@ -59,7 +59,10 @@
       explosion = new Image();
       explosion.src = "imgs/flowerburst.png"
 
-      gameView = new window.Asteroids.GameView(canvasEl);
+      gameView = new window.Asteroids.GameView({
+        canvasEl: canvasEl,
+        container: $("#game-container")}
+      );
 
 
       gameView.start();
